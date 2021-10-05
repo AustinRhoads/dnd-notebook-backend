@@ -77,7 +77,6 @@ ActiveRecord::Schema.define(version: 2021_10_05_021750) do
     t.text "flaws"
     t.integer "experience_points"
     t.string "alignment"
-    t.integer "attack_bonus"
     t.string "spellcasting_ability"
     t.integer "max_hit_points"
     t.integer "temperary_hit_points"
