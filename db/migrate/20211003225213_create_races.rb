@@ -4,12 +4,13 @@ class CreateRaces < ActiveRecord::Migration[6.1]
       t.string :name
       t.string :alignment
       t.string :age
-      t.string :asi_desc
-      t.string :desc
+      t.text :asi
+      t.text :asi_desc
+      t.text :desc
       t.string :languages
       t.string :size
-      t.string :speed_desc
-      t.string :traits
+      t.text :speed_desc
+      t.text :traits
       t.string :vision
       t.integer :speed
 

@@ -3,7 +3,7 @@ class CreateMonsters < ActiveRecord::Migration[6.1]
     create_table :monsters do |t|
       t.string :alignment
       t.integer :armor_class
-      t.string :armor_desc
+      t.text :armor_desc
       t.string :challenge_rating
       t.integer :charisma
       t.string :condition_immunities
@@ -19,9 +19,9 @@ class CreateMonsters < ActiveRecord::Migration[6.1]
       t.integer :hit_points
       t.integer :intelligence
       t.string :languages
-      t.string :legendary_desc
+      t.text :legendary_desc
       t.string :name
-      t.string :reactions
+      t.text :reactions
       t.string :senses
       t.string :size
       t.string :slug
@@ -30,6 +30,7 @@ class CreateMonsters < ActiveRecord::Migration[6.1]
       t.string :subtype
       t.string :type
       t.integer :wisdom
+      t.text :wisdom_saves
 
       t.timestamps
     end

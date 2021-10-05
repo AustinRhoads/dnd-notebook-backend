@@ -1,0 +1,2 @@
+class SpeedType < ApplicationRecord
+end

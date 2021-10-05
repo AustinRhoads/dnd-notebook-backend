@@ -2,8 +2,8 @@ class CreateCharacterClasses < ActiveRecord::Migration[6.1]
   def change
     create_table :character_classes do |t|
       t.string :name
-      t.string :desc
-      t.string :equipment
+      t.text :desc
+      t.text :equipment
       t.string :hit_dice
       t.string :hp_at_first_level
       t.string :hp_at_higher_levels
@@ -14,8 +14,8 @@ class CreateCharacterClasses < ActiveRecord::Migration[6.1]
       t.string :prof_weapons
       t.string :slug
       t.string :spellcasting_ability
-      t.string :subtypes_name
-      t.string :table
+      t.text :subtypes_name
+      t.text :table
 
       t.timestamps
     end
