@@ -61,6 +61,7 @@ ActiveRecord::Schema.define(version: 2021_10_05_021750) do
 
   create_table "characters", force: :cascade do |t|
     t.string "name"
+    t.integer "level"
     t.integer "dexterity"
     t.integer "strength"
     t.integer "intelligence"
